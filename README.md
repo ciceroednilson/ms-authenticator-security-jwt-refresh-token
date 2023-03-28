@@ -42,7 +42,7 @@ Esse projeto tem como principal objetivo usar o JWT no fluxo de segurança.
 CREATE DATABASE `db_security`;
 ~~~~
 
-Não precisamos criar as tabelas, por que as mesmas já vão ser criadas pelo JPA quando executarmos o projeto, mas depois de criadas precisamos executar os inserts abaixo.
+Não precisamos criar as tabelas, por que as mesmas já vão ser criadas pelo JPA quando executarmos o projeto, mas depois de criadas, precisamos executar os inserts abaixo.
 
 ~~~~sql
 INSERT INTO tb_roles(name) VALUES('ROLE_USER');
@@ -55,7 +55,7 @@ INSERT INTO tb_roles(name) VALUES('ROLE_ADMIN');
 Deixe o projeto executando na sua IDE, e depois vamos fazer as chamadas no Postman.
 
 
-#### 🔩️ Cadastrando usuário com a Role ROLE_USER. 
+#### 🔩️ Cadastrando usuário com a role ROLE_USER. 
 
 ~~~~shell
 curl --location --request POST 'http://localhost:8080/api/auth/signup' \
@@ -72,7 +72,7 @@ curl --location --request POST 'http://localhost:8080/api/auth/signup' \
 
 ![imagens/user.png](imagens/user.png)
 
-#### 🔩 Cadastrando usuário com a Role ROLE_MODERATOR. 
+#### 🔩 Cadastrando usuário com a role ROLE_MODERATOR. 
 
 ~~~~shell
 curl --location --request POST 'http://localhost:8080/api/auth/signup' \
@@ -89,7 +89,7 @@ curl --location --request POST 'http://localhost:8080/api/auth/signup' \
 
 ![imagens/moderator.png](imagens/moderator.png)
 
-#### 🔩 Cadastrando usuário com a Role ROLE_ADMIN. 
+#### 🔩 Cadastrando usuário com a role ROLE_ADMIN. 
 
 ~~~~shell
 curl --location --request POST 'http://localhost:8080/api/auth/signup' \
