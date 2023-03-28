@@ -50,6 +50,13 @@ INSERT INTO tb_roles(name) VALUES('ROLE_MODERATOR');
 INSERT INTO tb_roles(name) VALUES('ROLE_ADMIN');
 ~~~~
 
+## ⚙️ Modelo do Banco de Dados.
+
+Abaixo podemos ver como deve ficar as tabelas criadas pelo nosso projeto.
+
+![imagens/model-data-base.png](imagens/model-data-base.png)
+
+
 ## ⚙️ Realizando os cadastros de usuários. 
 
 Deixe o projeto executando na sua IDE, e depois vamos fazer as chamadas no Postman.
